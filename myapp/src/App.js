@@ -18,14 +18,16 @@ function App() {
 
 export default App;*/
 
-import ComponentLifeCycle from "./Day8/ComponenetLifeCycle";
+import StateHook from "./Context/StateHook";
+import Purity from "./Context/StateHook";
 
  
 function App()
 {
   return(
     <div>
-      <ComponentLifeCycle/>
+      <Purity/>
+      <StateHook/>
     </div>
   )
 }
