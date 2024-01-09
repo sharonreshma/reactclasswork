@@ -1,34 +1,28 @@
-/*import ErrorBound from './Day8/ErrorBound';
-import Car from './Day8/Car';
-import ErrorBound1 from './Day8/ErrorBound1';
-import TryCatch from './Day8/TryCatch';
-function App() {
-  return (
-    <div>
-<ErrorBound>
-<Car carName="Thar"></Car>
-</ErrorBound>
-<ErrorBound1>
-  <Car carName="JCB"></Car>
-</ErrorBound1>
-<TryCatch/>
-    </div>
-  );
-}
-
-export default App;*/
-
-import StateHook from "./Context/StateHook";
-import Purity from "./Context/StateHook";
-
- 
-function App()
-{
-  return(
-    <div>
-      <Purity/>
-      <StateHook/>
-    </div>
-  )
+import { Route, Routes } from "react-router-dom";
+import DisplayData from "./Practice/DisplayData";
+import Hello from "./Practice/Hello";
+import Helloworld from "./Practice/Helloworld";
+import Navbar from "./Practice/Navbar";
+import Home from "./Practice/Home";
+import About from "./Practice/About";
+import InlineStyling from "./Practice/InlineStyling";
+import CustomCard from "./Practice/CustomCard";
+import LoginForm from "./Practice/LoginForm";
+import { Provider} from 'react-redux';
+import Counter from "./Practice/Counter";
+import ErrorBoundary from "./Practice/ErrorBoundary";
+import Hero from "./Practice/Hero";
+import Theme from "./Practice/Theme";
+import { Store } from "./Practice/Store";
+function App(){
+  const staticData='i am static';
+  const dynamicData=new Date().toDateString();
+return(
+  <Provider store={Store}>
+  <div>
+   <Theme/>
+  </div>
+  </Provider>
+)
 }
 export default App;
